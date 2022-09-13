@@ -1,0 +1,69 @@
+@import "./globals.scss";
+
+#__next {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65rem;
+}
+
+nav {
+  ul {
+    display: flex;
+  }
+  li {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: rgb(16, 114, 175);
+    font-size: 14px;
+    font-weight: 800;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: rgb(30, 134, 199);
+    }
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+}
+
+.divider {
+  border-top: 0px solid rgb(255, 255, 255);
+}
+
+.title {
+  // font-size: 18px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.user {
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(198, 198, 198, 0.27);
+  box-shadow: 0px 2px 10px 2px rgba(198, 198, 198, 0.27);
+  margin: 1rem;
+  border-radius: 1rem;
+
+  padding: 1rem;
+  span {
+    float: right;
+  }
+  a {
+    color: white;
+  }
+  .userCardLink {
+    text-align: center;
+    // border: none;
+    background-color: black;
+    width: calc(100% + 2rem);
+    position: relative;
+    left: -1rem;
+    &:hover {
+      cursor: pointer;
+      color: rgb(16, 114, 175);
+    }
+  }
+}
