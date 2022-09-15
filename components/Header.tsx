@@ -7,6 +7,10 @@ const navLinks = [
     name: "Users",
     path: "/users",
   },
+  {
+    name: "Create",
+    path: "/create",
+  },
 ];
 
 export default function Header() {
