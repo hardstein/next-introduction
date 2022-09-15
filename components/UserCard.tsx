@@ -11,7 +11,7 @@ type UserProps = {
   // company: string;
 };
 
-export default function User(porps: UserProps) {
+export default function UserCard(porps: UserProps) {
   // const { id, name, username, email, street, city, company } = porps;
   const { user } = porps;
 
@@ -22,11 +22,11 @@ export default function User(porps: UserProps) {
     <>
       <li className="user">
         <h3>
-          {user.name}
-          <span>{user.id}</span>
+          {user?.name}
+          <span>{user?.id}</span>
         </h3>
-        <p>Username: {user.username}</p>
-        <p>Contact: {user.email}</p>
+        <p>Username: {user?.username}</p>
+        <p>Contact: {user?.email}</p>
         <div className="userCardLink">
           <Link href={navigationPath()}>
             <a>More information</a>
